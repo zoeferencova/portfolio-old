@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	margin: 0;
+}
+
+nav {
+  background-color: #aaa;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.large-nav {
+	display: none;
+}
+
+.logo {
+	width: 150px;
+	background: none;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  height: 75vh;
+}
+
+.headline {
+	text-align: left;
+	font-size: 20px;
+}
+
+.banner .text-link {
+	margin-top: 10%;
+}
+
+section {
+	min-height: 200px;
+	padding: 10% 5%;
+	font-size: 15px;
+}
+
+.projects {
+	background-color: #ddd;
+}
+
+.project-image {
+	width: 80%;
+}
+
+.about {
+	background-color: #ccc;
+}
+
+.contact-links li {
+	display: inline-block;
+	margin: 4%;
+}
+
+p {
+	padding: 5% 0;
+}
+
+.icon {
+	height: 40px;
+}
+
+.projects .icon {
+	margin-left: 15%;
+}
+
+.about-image {
+	width: 60%;
+}
+
+.text-link {
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid black;
+	padding: 5px;
+	color: black;
+}
+
+
+/*tablet*/
+@media screen and (min-width: 600px) {
+	nav {
+		padding: 5px;
+	}
+
+	.large-nav {
+		list-style: none;
+		align-self: flex-end;
+		margin-top: -18px;
+		display: flex;
+	}
+
+	.large-nav li {
+		display: inline;
+		margin-right: 20px;
+
+	}
+
+	.large-nav a {
+		text-decoration: none;
+		color: black;
+	}
+	
+	.logo {
+		margin-top: 10px;
+	}
+
+	.banner {
+		height: 75vh;
+	}
+}
+
+/*desktop*/
+@media screen and (min-width: 1025px) {
+	.banner {
+		height: 100vh;
+	}
+}
