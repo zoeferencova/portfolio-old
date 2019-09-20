@@ -145,8 +145,24 @@ p {
 	width: 150px;
 }
 
+.about-title {
+	position: relative;
+	text-align: left;
+	height: 150px;
+}
+
+.about-title img {
+	position: absolute;
+	margin-top: -70px;
+	max-width: 200px;
+}
+
+.about-title h2 {
+	position: absolute;
+}
+
 .about {
-	margin-top: 20%;
+	margin-top: 200px;
 }
 
 address .text-link {
@@ -196,6 +212,18 @@ address .text-link {
 	h2 {
 		margin-top: 70px;
 	}
+
+	.about-title img {
+		position: absolute;
+		margin-top: -20px;
+		max-width: 200px;
+	}
+
+	.about {
+		padding-top: 100px;
+		margin-top: 50px;
+	}
+
 }
 
 /*desktop*/
@@ -206,13 +234,21 @@ address .text-link {
 	}
 
 	.about {
-		margin: 200px 0;
+		margin: 50px 0;
 	}
 
 	p {
 		max-width: 500px;
 		font-size: 18px;
 		line-height: 175%;
+	}
+
+	.about p {
+		margin-top: -80px;
+	}
+
+	.project-image, .about-image {
+		margin: 100px 0;
 	}
 
 	.content-text-left, .content-text-right {
@@ -258,5 +294,21 @@ address .text-link {
 		max-width: 550px;
 		min-width: 300px;
 		padding: 0 50px;
+	}
+
+	.headline {
+		font-size: 36px;
+	}
+
+	.about-content {
+		margin-top: -30px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 20px;
 	}
 }
