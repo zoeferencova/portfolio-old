@@ -7,13 +7,51 @@ html {
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'IBM Plex Mono', monospace;
 	text-align: center;
 	margin: 0;
+	line-height: 1.5em;
+}
+
+.capital {
+	text-transform: uppercase;
+}
+
+.text-link {
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px 15px;
+	color: black;
+	font-size: 13px;
+	line-height: normal;
+}
+
+.text-link:hover, .text-link:focus {
+	background-color: black;
+	color: white;
+}
+
+section {
+	min-height: 200px;
+	padding: 5% 7%;
+	font-size: 15px;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+	margin-left: 5%;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: normal;
 }
 
 nav {
-  background-color: #aaa;
+  background-color: white;
   top: 0;
   left: 0;
   right: 0;
@@ -23,6 +61,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 15px 0px;
+  position: absolute;
 }
 
 .large-nav {
@@ -30,7 +69,7 @@ nav {
 }
 
 .logo {
-	width: 150px;
+	width: 50px;
 	background: none;
 }
 
@@ -40,63 +79,69 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 0 10%;
-  height: 75vh;
+  height: 100vh;
 }
 
 .headline {
 	text-align: left;
-	font-size: 20px;
+	font-size: 22px;
+	line-height: 30px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 600;
 }
 
 .banner .text-link {
 	margin-top: 10%;
+	width: 140px;
 }
 
-section {
-	min-height: 200px;
-	padding: 10% 5%;
-	font-size: 15px;
-}
-
-.projects {
-	background-color: #ddd;
-}
-
-.project-image {
+.project-image, .about-image {
 	width: 80%;
+	margin: 30px 0;
 }
 
-.about {
-	background-color: #ccc;
+.contact-links {
+	padding: 0;
 }
 
 .contact-links li {
 	display: inline-block;
-	margin: 4%;
+	margin: 6% 4%;
 }
 
 p {
 	padding: 5% 0;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+	
+	text-align: left;
 }
 
 .icon {
 	height: 40px;
 }
 
-.projects .icon {
-	margin-left: 15%;
+.project-links .icon {
+	position: absolute;
+	right: 0;
 }
 
-.about-image {
-	width: 60%;
+.project-links {
+	position: relative;
 }
 
-.text-link {
-	text-decoration: none;
-	display: inline-block;
-	border: 1px solid black;
-	padding: 5px;
-	color: black;
+.project-links .text-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.about {
+	margin-top: 20%;
+}
+
+address .text-link {
+	font-style: normal;
 }
 
 
@@ -109,14 +154,14 @@ p {
 	.large-nav {
 		list-style: none;
 		align-self: flex-end;
-		margin-top: -18px;
+		margin-top: -35px;
 		display: flex;
+		font-size: 13px;
 	}
 
 	.large-nav li {
 		display: inline;
-		margin-right: 20px;
-
+		margin-right: 40px;
 	}
 
 	.large-nav a {
@@ -126,10 +171,6 @@ p {
 	
 	.logo {
 		margin-top: 10px;
-	}
-
-	.banner {
-		height: 75vh;
 	}
 }
 
