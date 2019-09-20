@@ -10,7 +10,7 @@ body {
 	font-family: 'IBM Plex Mono', monospace;
 	text-align: center;
 	margin: 0;
-	line-height: 1.5em;
+	line-height: 150%;
 }
 
 .capital {
@@ -84,8 +84,7 @@ nav {
 
 .headline {
 	text-align: left;
-	font-size: 22px;
-	line-height: 30px;
+	font-size: 20px;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 600;
 }
@@ -111,9 +110,9 @@ nav {
 
 p {
 	padding: 5% 0;
+	font-size: 16px;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
-	
 	text-align: left;
 }
 
@@ -134,6 +133,7 @@ p {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 150px;
 }
 
 .about {
@@ -172,11 +172,75 @@ address .text-link {
 	.logo {
 		margin-top: 10px;
 	}
+
+	.headline {
+		font-size: 30px;
+		line-height: 150%;
+		padding: 0 30px;
+	}
 }
 
 /*desktop*/
-@media screen and (min-width: 1025px) {
-	.banner {
-		height: 100vh;
+@media screen and (min-width: 1200px) {
+
+	body {
+		padding: 0 3%;
 	}
+
+	.about {
+		margin: 200px 0;
+	}
+
+	p {
+		max-width: 500px;
+		font-size: 18px;
+		line-height: 175%;
+	}
+
+	.content-text-left, .content-text-right {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 70vh;
+	}
+
+	.content-text-left {
+		flex-direction: row-reverse;
+	}
+
+	.contact-links, address .text-link {
+		position: absolute;
+	}
+
+	.contact-links {
+		right: 0;
+		top: 0;
+		margin: 0;
+		padding: 0;
+		width: 190px;
+	}
+
+	address .text-link {
+		left: 0;
+		top: 14px;
+	}
+
+	.contact {
+		position: relative;
+		margin-top: 50px;
+	}
+
+	.project-image {
+		min-width: 200px;
+		max-width: 750px;
+		padding: 0 50px;
+	}
+
+	.about-image {
+		max-width: 550px;
+		min-width: 300px;
+		padding: 0 50px;
+	}
+
+	
 }
