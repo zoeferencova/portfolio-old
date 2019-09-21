@@ -7,13 +7,50 @@ html {
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'IBM Plex Mono', monospace;
 	text-align: center;
 	margin: 0;
+	line-height: 150%;
+}
+
+.capital {
+	text-transform: uppercase;
+}
+
+.text-link {
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px 15px;
+	color: black;
+	font-size: 13px;
+	line-height: normal;
+}
+
+.text-link:hover, .text-link:focus {
+	background-color: black;
+	color: white;
+}
+
+section {
+	min-height: 200px;
+	padding: 5% 7%;
+	font-size: 15px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	text-align: left;
+	margin-left: 5%;
+}
+
+h3 {
+	font-size: 18px;
 }
 
 nav {
-  background-color: #aaa;
+  background-color: white;
   top: 0;
   left: 0;
   right: 0;
@@ -23,6 +60,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 15px 0px;
+  position: absolute;
 }
 
 .large-nav {
@@ -30,7 +68,7 @@ nav {
 }
 
 .logo {
-	width: 150px;
+	width: 50px;
 	background: none;
 }
 
@@ -40,102 +78,237 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 0 10%;
-  height: 75vh;
+  height: 100vh;
 }
 
 .headline {
 	text-align: left;
 	font-size: 20px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 600;
+}
+
+.highlight1 {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 60%, #d9feff 60%);
+  	display: inline;
+}
+
+.highlight2 {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 60%, #fff3c9 60%);
+  	display: inline;
 }
 
 .banner .text-link {
 	margin-top: 10%;
+	width: 140px;
 }
 
-section {
-	min-height: 200px;
-	padding: 10% 5%;
-	font-size: 15px;
-}
-
-.projects {
-	background-color: #ddd;
-}
-
-.project-image {
+.project-image, .about-image {
 	width: 80%;
+	margin: 30px 0;
 }
 
-.about {
-	background-color: #ccc;
+.contact-links {
+	padding: 0;
 }
 
 .contact-links li {
 	display: inline-block;
-	margin: 4%;
+	margin: 6% 4%;
 }
 
 p {
 	padding: 5% 0;
+	font-size: 16px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+	text-align: left;
 }
 
 .icon {
 	height: 40px;
 }
 
-.projects .icon {
-	margin-left: 15%;
+.project-links .icon {
+	position: absolute;
+	right: 0;
 }
 
-.about-image {
-	width: 60%;
+.project-links {
+	position: relative;
 }
 
-.text-link {
-	text-decoration: none;
-	display: inline-block;
-	border: 1px solid black;
-	padding: 5px;
-	color: black;
+.project-links .text-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+}
+
+.about-title {
+	position: relative;
+	text-align: left;
+	height: 150px;
+}
+
+.about-title img {
+	position: absolute;
+	margin-top: -70px;
+	max-width: 200px;
+}
+
+.about-title h2 {
+	position: absolute;
+}
+
+.about {
+	margin-top: 200px;
+}
+
+address .text-link {
+	font-style: normal;
 }
 
 
 /*tablet*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
 	nav {
 		padding: 5px;
+		position: fixed;
 	}
 
 	.large-nav {
 		list-style: none;
 		align-self: flex-end;
-		margin-top: -18px;
+		margin-top: -35px;
 		display: flex;
+		font-size: 13px;
 	}
 
 	.large-nav li {
 		display: inline;
-		margin-right: 20px;
-
+		margin-right: 40px;
 	}
 
 	.large-nav a {
 		text-decoration: none;
 		color: black;
 	}
+
+	.large-nav a:hover, .large-nav a:focus {
+		background: linear-gradient(180deg, rgba(255,255,255,0) 50%, #e1d9ff 50%);
+	}
 	
 	.logo {
 		margin-top: 10px;
 	}
 
-	.banner {
-		height: 75vh;
+	.headline {
+		font-size: 30px;
+		line-height: 150%;
+		padding: 0 30px;
 	}
+
+	h2 {
+		margin-top: 70px;
+	}
+
+	.about-title img {
+		position: absolute;
+		margin-top: -20px;
+		max-width: 200px;
+	}
+
+	.about {
+		padding-top: 100px;
+		margin-top: 50px;
+	}
+
 }
 
 /*desktop*/
-@media screen and (min-width: 1025px) {
-	.banner {
-		height: 100vh;
+@media screen and (min-width: 1200px) {
+
+	body {
+		padding: 0 3%;
+	}
+
+	.about {
+		margin: 50px 0;
+	}
+
+	p {
+		max-width: 500px;
+		font-size: 18px;
+		line-height: 175%;
+	}
+
+	.about p {
+		margin-top: -100px;
+	}
+
+	.project-image, .about-image {
+		margin: 100px 0;
+	}
+
+	.content-text-left, .content-text-right {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 70vh;
+	}
+
+	.content-text-left {
+		flex-direction: row-reverse;
+	}
+
+	.contact-links, address .text-link {
+		position: absolute;
+	}
+
+	.contact-links {
+		right: 0;
+		top: 0;
+		margin: 0;
+		padding: 0;
+		width: 190px;
+	}
+
+	address .text-link {
+		left: 0;
+		top: 14px;
+	}
+
+	.contact {
+		position: relative;
+		margin-top: 50px;
+	}
+
+	.project-image {
+		min-width: 200px;
+		max-width: 750px;
+		padding: 0 50px;
+	}
+
+	.about-image {
+		max-width: 550px;
+		min-width: 300px;
+		padding: 0 50px;
+	}
+
+	.headline {
+		font-size: 36px;
+	}
+
+	.about-content {
+		margin-top: -30px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 20px;
 	}
 }
