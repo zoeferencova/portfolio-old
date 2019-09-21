@@ -47,6 +47,8 @@ h2 {
 
 h3 {
 	font-size: 18px;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 50%, #e1d9ff 50%);
+	display: inline;
 }
 
 nav {
@@ -103,9 +105,14 @@ nav {
 	width: 140px;
 }
 
-.project-image, .about-image {
+.about-image {
 	width: 80%;
 	margin: 30px 0;
+}
+
+.project-image {
+	width: 95%;
+	margin: 20px 0;
 }
 
 .contact-links {
@@ -143,6 +150,12 @@ p {
 	top: 0;
 	left: 0;
 	width: 150px;
+}
+
+.ball {
+	width: 65px;
+	display: block;
+	margin: 10px auto;
 }
 
 .about-title {
@@ -229,17 +242,13 @@ address .text-link {
 /*desktop*/
 @media screen and (min-width: 1200px) {
 
-	body {
-		padding: 0 3%;
-	}
-
 	.about {
 		margin: 50px 0;
 	}
 
 	p {
 		max-width: 500px;
-		font-size: 18px;
+		font-size: 17px;
 		line-height: 175%;
 	}
 
@@ -287,7 +296,7 @@ address .text-link {
 	.project-image {
 		min-width: 200px;
 		max-width: 750px;
-		padding: 0 50px;
+		padding-right: 75px;
 	}
 
 	.about-image {
@@ -302,6 +311,10 @@ address .text-link {
 
 	.about-content {
 		margin-top: -30px;
+	}
+
+	.project-content {
+		margin-top: -60px;
 	}
 
 	h2 {
