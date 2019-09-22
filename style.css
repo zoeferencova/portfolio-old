@@ -152,12 +152,6 @@ p {
 	width: 150px;
 }
 
-.ball {
-	width: 65px;
-	display: block;
-	margin: 10px auto;
-}
-
 .about-title {
 	position: relative;
 	text-align: left;
