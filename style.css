@@ -149,9 +149,15 @@ nav {
 	background-color: #c98585;
 }
 
+.travelbuddy-image {
+	width: 100%;
+}
+
 .pl-quiz {
 	background-color: #FEF2CC;
 }
+
+
 
 .contact-links {
 	padding: 0;
@@ -259,6 +265,16 @@ address .text-link {
 	.projects {
 		min-height: 750px;
 	}
+
+	.travelbuddy-image {
+		width: 60%;
+		margin-left: 40px;
+		margin-right: -50px;
+	}
+
+	.quiz-image {
+		width: 100%;
+	}
 	
 	.about .section-title {
 		margin-bottom: 0px;
@@ -311,15 +327,12 @@ address .text-link {
 		margin-top: 50px;
 	}
 
-	.project-image {
+	.quiz-image {
 		min-width: 200px;
-		max-width: 750px;
-		padding-right: 75px;
-	}
-
-	.travelbuddy-vid {
-		width: 60%;
-		height: 60%;
+		max-width: 900px;
+		padding-right: 60px;
+		margin-left: -30px;
+		margin-top: 140px;
 	}
 
 	.about-image {
